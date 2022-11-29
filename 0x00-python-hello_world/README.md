@@ -1,1 +1,7 @@
-alx-higher_level_programming project
+Alx-higher_level_programming project
+
+What does HLL mean?
+
+A high-level language is any programming language that enables development of a program in a much more user-friendly programming context and is generally independent of the computer's hardware architecture.
+
+A high-level language has a higher level of abstraction from the computer, and focuses more on the programming logic rather than the underlying hardware components such as memory addressing and register utilization.
