@@ -22,4 +22,11 @@ if __name__ == "__main__":
 
     if z['opr'] == '+':
         z['res'] = add(z['x'], z['y'])
+    elif z['opr'] == '-':
+        z['res'] = sub(z['x'], z['y'])
+    elif z['opr'] == '*':
+        z['res'] = mul(z['x'], z['y'])
+    elif z['opr'] == '/':
+        z['res'] = div(z['x'], z['y'])
 
+    print("{x} {opr} {y} = {res}".format(**z))
