@@ -1,20 +1,15 @@
 #!/usr/bin/python3
-"""
-POST request to the passed URL with the email as a parameter
-"""
+'''
+Write a Python script that takes in a URL and an email, sends a POST
+request to the passed URL with the email as a parameter, and displays
+the body of the response (decoded in utf-8)
+Request Module
+'''
 import requests
 from sys import argv
 
-
-def main(argv):
-    """
-    Sends a POST request to the passed URL with the email as a parameter,
-    and displays the body of the response (decoded in utf-8)
-    """
-    values = {'email': argv[2]}
-    url = argv[1]
-    r = requests.post(url, data=values)
-    print(r.text)
-
-if __name__ == "__main__":
-    main(argv)
+if (__name__ == "__main__"):
+    if len(argv) == 3:
+        url = argv[1]
+        res = requests.post(url, data={'email': argv[2]})
+        print(res.text)
